@@ -1,18 +1,20 @@
 ---
 _archived: false
 _draft: false
-created-on: "2020-12-13T08:13:20.196Z"
-name: "Narzędzia używane przez pedagogów i psychologów"
-slug: "10-great-examples-of-responsive-websites"
-updated-on: "2020-12-17T14:43:23.120Z"
-categorie: "site/category/mowa.md"
+tags: blog
+date: 2021-02-03T16:52:54.358Z
+layout: single-blog.html
 image:
-  url: "https://uploads-ssl.webflow.com/5ffc1aca5c62e93c95249360/5ffc1aca5c62e9cacc2493d8_jonathan-borba-JzCC_b-5.jpg"
+  url: https://uploads-ssl.webflow.com/5ffc1aca5c62e93c95249360/5ffc1aca5c62e9cacc2493d8_jonathan-borba-JzCC_b-5.jpg
   alt: ""
-description: "Et et fuga sit sequi nostrum et. Alias eos sint. Reiciendis quidem ut unde perspiciatis excepturi. Por"
-published-on: "2020-12-17T14:53:38.663Z"
-tags: "blog"
-layout: "single-blog.html"
+description: Et et fuga sit sequi nostrum et. Alias eos sint. Reiciendis quidem
+  ut unde perspiciatis excepturi. Por
+categorie: site/category/mowa.md
+name: Narzędzia używane przez pedagogów i psychologów
+created-on: 2020-12-13T08:13:20.196Z
+slug: 10-great-examples-of-responsive-websites
+updated-on: 2020-12-17T14:43:23.120Z
+published-on: 2020-12-17T14:53:38.663Z
 ---
 
 Doloribus architecto repellat ut odit.
