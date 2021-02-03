@@ -1,0 +1,31 @@
+stackbitVersion: "~0.3.0"
+ssgName: "custom"
+buildCommand: "npx @11ty/eleventy"
+publishDir: "public"
+staticDir: "static"
+uploadDir: "images"
+pagesDir: "site"
+metadata:
+  title: "trudnosci rozwojowe caf36bd8a2ede06302c"
+  description: "Theme created in Webflow and converted with Udesly"
+models:
+  diagnostic_tools:
+    type: "page"
+    label: "Diagnostic tools"
+    urlPath: "/diagnostic-tools/{slug}"
+  blog:
+    type: "page"
+    label: "Blog Posts"
+    urlPath: "/blog/{slug}"
+  category:
+    type: "page"
+    label: "Categories"
+    urlPath: "/category/{slug}"
+  diagnostic_tool_categories:
+    type: "page"
+    label: "Diagnostic tool categories"
+    urlPath: "/diagnostic-tool-categories/{slug}"
+  poradnie:
+    type: "page"
+    label: "Poradnies"
+    urlPath: "/poradnie/{slug}"

@@ -1,0 +1,40 @@
+{
+  "-599c4a6b": {
+    "collection": "blog",
+    "query": {
+      "offset": 0,
+      "limit": 2,
+      "fields": [
+        {
+          "fieldPath": "_id",
+          "operatorName": "ne",
+          "value": "DYN_CONTEXT"
+        }
+      ]
+    }
+  },
+  "-3543b215": {
+    "collection": "blog"
+  },
+  "-6250c9b9": {
+    "collection": "category"
+  },
+  "60e53a94": {
+    "collection": "diagnostic_tool_categories"
+  },
+  "-548802": {
+    "collection": "diagnostic_tools"
+  },
+  "-2da88d7d": {
+    "collection": "blog",
+    "query": {
+      "fields": [
+        {
+          "fieldPath": "categorie",
+          "operatorName": "eq",
+          "value": "DYN_CONTEXT"
+        }
+      ]
+    }
+  }
+}
