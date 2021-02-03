@@ -10,7 +10,7 @@ image:
 description: Et et fuga sit sequi nostrum et. Alias eos sint. Reiciendis quidem
   ut unde perspiciatis excepturi. Por
 categorie: site/category/mowa.md
-name: Narzędzia używane przez pedagogów i psychologów
+name: Blog test
 created-on: 2020-12-13T08:13:20.196Z
 slug: 10-great-examples-of-responsive-websites
 updated-on: 2020-12-17T14:43:23.120Z
