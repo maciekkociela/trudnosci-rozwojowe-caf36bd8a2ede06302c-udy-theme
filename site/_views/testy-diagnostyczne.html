@@ -100,7 +100,7 @@
                       {%- if collection.length > 0 -%}<div role="list" class="w-dyn-items">
                         {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                           <div class="internal-dropdown-link w-embed" token="{{ item.url.name | escape }}">
-                            <a class="internal-dropdown-link" data-filter="." href="#"></a>
+                            <a class="internal-dropdown-link" data-filter="." href="#">{{ item.name }}</a>
                           </div>
                         </div>{%- endfor -%}
                       </div>{%- endif -%}
