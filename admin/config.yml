@@ -63,104 +63,8 @@ collections:
             name: "additional_tags"
             widget: "text"
             required: false
-  - name: "diagnostic_tools"
-    label: "Diagnostic tools"
-    folder: "site/diagnostic-tools"
-    create: true
-    identifier_field: "name"
-    extension: "md"
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - label: "Tags"
-        widget: "hidden"
-        name: "tags"
-        default: "diagnostic_tools"
-      - label: "Publish Date"
-        name: "date"
-        widget: "datetime"
-      - label: "Layout"
-        widget: "hidden"
-        name: "layout"
-        default: "single-diagnostic-tools.html"
-      - label: "Seo"
-        name: "seo"
-        widget: "object"
-        collapsed: true
-        fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-            required: false
-          - label: "Description"
-            name: "description"
-            widget: "string"
-            required: false
-          - label: "Open Graph Image"
-            name: "og:image"
-            widget: "image"
-            required: false
-            media_library:
-              config:
-                multiple: false
-          - label: "Twitter Card"
-            name: "twitter:card"
-            widget: "string"
-            default: "summary"
-            required: false
-          - label: "Twitter Site"
-            name: "twitter:site"
-            widget: "string"
-            required: false
-          - label: "Twitter Creator"
-            name: "twitter:creator"
-            widget: "string"
-            required: false
-          - label: "Additional HTML tags"
-            name: "additional_tags"
-            widget: "text"
-            required: false
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: false
-      - name: "plusy"
-        label: "Plusy"
-        widget: "markdown"
-        required: false
-      - name: "minusy"
-        label: "Minusy"
-        widget: "markdown"
-        required: false
-      - widget: "relation"
-        collection: "diagnostic_tool_categories"
-        value_field: "site/diagnostic-tool-categories/{{slug}}.md"
-        search_fields:
-          - "slug"
-          - "name"
-        display_fields:
-          - "name"
-        required: false
-        name: "category"
-      - name: "name"
-        label: "Name"
-        widget: "string"
-        required: true
-      - name: "created-on"
-        label: "Created On"
-        widget: "datetime"
-        required: false
-      - name: "updated-on"
-        label: "Updated On"
-        widget: "datetime"
-        required: false
-      - name: "published-on"
-        label: "Published On"
-        widget: "datetime"
-        required: false
   - name: "blog"
-    label: "Blog Posts"
+    label: "Blog"
     folder: "site/blog"
     create: true
     identifier_field: "name"
@@ -248,6 +152,14 @@ collections:
           - "name"
         required: false
         name: "categorie"
+      - name: "data-pubikacji"
+        label: "Data pubikacji"
+        widget: "datetime"
+        required: false
+      - name: "dla-specjalistow"
+        label: "Dla specjalistów"
+        widget: "boolean"
+        required: false
       - name: "name"
         label: "Name"
         widget: "string"
@@ -265,7 +177,7 @@ collections:
         widget: "datetime"
         required: false
   - name: "category"
-    label: "Categories"
+    label: "Kategorie - Blog"
     folder: "site/category"
     create: true
     identifier_field: "name"
@@ -359,9 +271,9 @@ collections:
         label: "Published On"
         widget: "datetime"
         required: false
-  - name: "diagnostic_tool_categories"
-    label: "Diagnostic tool categories"
-    folder: "site/diagnostic-tool-categories"
+  - name: "poradnie"
+    label: "Poradnie"
+    folder: "site/poradnie"
     create: true
     identifier_field: "name"
     extension: "md"
@@ -372,14 +284,14 @@ collections:
       - label: "Tags"
         widget: "hidden"
         name: "tags"
-        default: "diagnostic_tool_categories"
+        default: "poradnie"
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
       - label: "Layout"
         widget: "hidden"
         name: "layout"
-        default: "single-diagnostic-tool-categories.html"
+        default: "single-poradnie.html"
       - label: "Seo"
         name: "seo"
         widget: "object"
@@ -433,9 +345,9 @@ collections:
         label: "Published On"
         widget: "datetime"
         required: false
-  - name: "poradnie"
-    label: "Poradnies"
-    folder: "site/poradnie"
+  - name: "narzedzia_diagnostyczne"
+    label: "Narzędzia diagnostyczne"
+    folder: "site/narzedzia-diagnostyczne"
     create: true
     identifier_field: "name"
     extension: "md"
@@ -446,14 +358,110 @@ collections:
       - label: "Tags"
         widget: "hidden"
         name: "tags"
-        default: "poradnie"
+        default: "narzedzia_diagnostyczne"
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
       - label: "Layout"
         widget: "hidden"
         name: "layout"
-        default: "single-poradnie.html"
+        default: "single-narzedzia-diagnostyczne.html"
+      - label: "Seo"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+            required: false
+          - label: "Description"
+            name: "description"
+            widget: "string"
+            required: false
+          - label: "Open Graph Image"
+            name: "og:image"
+            widget: "image"
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - label: "Twitter Card"
+            name: "twitter:card"
+            widget: "string"
+            default: "summary"
+            required: false
+          - label: "Twitter Site"
+            name: "twitter:site"
+            widget: "string"
+            required: false
+          - label: "Twitter Creator"
+            name: "twitter:creator"
+            widget: "string"
+            required: false
+          - label: "Additional HTML tags"
+            name: "additional_tags"
+            widget: "text"
+            required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+      - name: "plusy"
+        label: "Plusy"
+        widget: "markdown"
+        required: false
+      - name: "minusy"
+        label: "Minusy"
+        widget: "markdown"
+        required: false
+      - widget: "relation"
+        collection: "kategoria_narzedzia"
+        value_field: "site/kategoria-narzedzia/{{slug}}.md"
+        search_fields:
+          - "slug"
+          - "name"
+        display_fields:
+          - "name"
+        required: false
+        name: "category"
+      - name: "name"
+        label: "Name"
+        widget: "string"
+        required: true
+      - name: "created-on"
+        label: "Created On"
+        widget: "datetime"
+        required: false
+      - name: "updated-on"
+        label: "Updated On"
+        widget: "datetime"
+        required: false
+      - name: "published-on"
+        label: "Published On"
+        widget: "datetime"
+        required: false
+  - name: "kategoria_narzedzia"
+    label: "Kategorie - Narzędzia Diagnostyczne"
+    folder: "site/kategoria-narzedzia"
+    create: true
+    identifier_field: "name"
+    extension: "md"
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Tags"
+        widget: "hidden"
+        name: "tags"
+        default: "kategoria_narzedzia"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Layout"
+        widget: "hidden"
+        name: "layout"
+        default: "single-kategoria-narzedzia.html"
       - label: "Seo"
         name: "seo"
         widget: "object"

@@ -6,26 +6,26 @@ staticDir: "static"
 uploadDir: "images"
 pagesDir: "site"
 metadata:
-  title: "trudnosci rozwojowe caf36bd8a2ede06302c"
+  title: "Trudnosci Rozwojowe "
   description: "Theme created in Webflow and converted with Udesly"
 models:
-  diagnostic_tools:
-    type: "page"
-    label: "Diagnostic tools"
-    urlPath: "/diagnostic-tools/{slug}"
   blog:
     type: "page"
-    label: "Blog Posts"
+    label: "Blog"
     urlPath: "/blog/{slug}"
   category:
     type: "page"
-    label: "Categories"
+    label: "Kategorie - Blog"
     urlPath: "/category/{slug}"
-  diagnostic_tool_categories:
-    type: "page"
-    label: "Diagnostic tool categories"
-    urlPath: "/diagnostic-tool-categories/{slug}"
   poradnie:
     type: "page"
-    label: "Poradnies"
+    label: "Poradnie"
     urlPath: "/poradnie/{slug}"
+  narzedzia_diagnostyczne:
+    type: "page"
+    label: "Narzędzia diagnostyczne"
+    urlPath: "/narzedzia-diagnostyczne/{slug}"
+  kategoria_narzedzia:
+    type: "page"
+    label: "Kategorie - Narzędzia Diagnostyczne"
+    urlPath: "/kategoria-narzedzia/{slug}"

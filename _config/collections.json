@@ -1,4 +1,11 @@
 {
+  "22351502": {
+    "collection": "narzedzia_diagnostyczne",
+    "query": {
+      "offset": 1,
+      "limit": 100
+    }
+  },
   "-599c4a6b": {
     "collection": "blog",
     "query": {
@@ -13,17 +20,79 @@
       ]
     }
   },
-  "-3543b215": {
-    "collection": "blog"
+  "56b6dcf2": {
+    "collection": "blog",
+    "paginationLimit": 3,
+    "query": {
+      "sort": [
+        "-data-pubikacji"
+      ],
+      "fields": [
+        {
+          "fieldPath": "dla-specjalistow",
+          "operatorName": "eq",
+          "value": "true"
+        }
+      ],
+      "offset": 0,
+      "limit": 3
+    }
+  },
+  "55b7c08d": {
+    "collection": "blog",
+    "query": {
+      "sort": [
+        "-data-pubikacji"
+      ],
+      "fields": [
+        {
+          "fieldPath": "dla-specjalistow",
+          "operatorName": "eq",
+          "value": "true"
+        }
+      ],
+      "offset": 3
+    }
+  },
+  "-2429349": {
+    "collection": "blog",
+    "query": {
+      "fields": [
+        {
+          "fieldPath": "dla-specjalistow",
+          "operatorName": "ne",
+          "value": "true"
+        }
+      ],
+      "offset": 0,
+      "limit": 3
+    }
+  },
+  "763b3e4a": {
+    "collection": "blog",
+    "query": {
+      "fields": [
+        {
+          "fieldPath": "dla-specjalistow",
+          "operatorName": "ne",
+          "value": "true"
+        }
+      ],
+      "offset": 3
+    }
   },
   "-6250c9b9": {
     "collection": "category"
   },
-  "60e53a94": {
-    "collection": "diagnostic_tool_categories"
+  "-6cca536d": {
+    "collection": "kategoria_narzedzia"
   },
-  "-548802": {
-    "collection": "diagnostic_tools"
+  "1b3e56a3": {
+    "collection": "narzedzia_diagnostyczne",
+    "query": {
+      "offset": 0,
+      "limit": 1
+    }
   },
   "-2da88d7d": {
     "collection": "blog",
