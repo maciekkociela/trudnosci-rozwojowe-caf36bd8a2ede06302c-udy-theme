@@ -17,15 +17,11 @@ models:
     type: "page"
     label: "Kategorie - Blog"
     urlPath: "/category/{slug}"
-  poradnie:
-    type: "page"
-    label: "Poradnie"
-    urlPath: "/poradnie/{slug}"
-  narzedzia_diagnostyczne:
-    type: "page"
-    label: "Narzędzia diagnostyczne"
-    urlPath: "/narzedzia-diagnostyczne/{slug}"
   kategoria_narzedzia:
     type: "page"
     label: "Kategorie - Narzędzia Diagnostyczne"
     urlPath: "/kategoria-narzedzia/{slug}"
+  narzedzia_diagnostyczne:
+    type: "page"
+    label: "Narzędzia diagnostyczne"
+    urlPath: "/narzedzia-diagnostyczne/{slug}"
